@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''sudo npm cache clean
+        sh '''sudo -i
+sudo npm cache clean
 sudo npm update -g ionic
 '''
       }
