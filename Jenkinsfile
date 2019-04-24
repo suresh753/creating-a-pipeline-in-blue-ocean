@@ -9,9 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''#!/bin/bash
-whoami'''
-        sh 'sudo apt install npm'
+        sh 'sudo apt install npm -y'
       }
     }
   }
