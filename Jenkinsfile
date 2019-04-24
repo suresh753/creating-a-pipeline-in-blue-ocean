@@ -9,8 +9,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''chmod -R g+w .
-npm install'''
+        sh '''sudo npm cache clean
+sudo npm update -g ionic
+'''
       }
     }
   }
