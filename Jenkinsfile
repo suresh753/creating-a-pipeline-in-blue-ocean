@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install -g eslint --unsafe-perm=true --allow-root'
+        sh '''chmod -R g+w .
+npm install'''
       }
     }
   }
